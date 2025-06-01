@@ -1,6 +1,7 @@
 # 8. Radix Sort
 # Vantagens: Muito eficiente para inteiros grandes.
 # Desvantagens: Não funciona para floats ou negativos diretamente.
+lista = [5,2,4,3,1]
 def radix_sort(lista):
     if len(lista) == 0:
         return lista
@@ -31,3 +32,5 @@ def counting_sort_radix(lista, exp):
         i -= 1
 
     return saida
+lista_ordenada = radix_sort(lista)
+print(lista_ordenada)
