@@ -1,6 +1,7 @@
 # 4. Merge Sort (Ordenação por Intercalação)
 # Vantagens: Complexidade O(n log n), estável.
 # Desvantagens: Usa memória adicional (O(n)).
+lista = [5,2,4,3,1]
 def merge_sort(lista):
     if len(lista) <= 1:
         return lista
@@ -25,3 +26,5 @@ def merge(esquerda, direita):
     resultado.extend(esquerda[i:])
     resultado.extend(direita[j:])
     return resultado
+lista_ordenada = merge_sort(lista)
+print(lista_ordenada)
